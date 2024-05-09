@@ -1,5 +1,5 @@
-# Implementation-of-SVM-For-Spam-Mail-Detection
-
+# EXN0-9 Implementation-of-SVM-For-Spam-Mail-Detection
+## Date : 
 ## AIM:
 To write a program to implement the SVM For Spam Mail Detection.
 
@@ -12,23 +12,22 @@ To write a program to implement the SVM For Spam Mail Detection.
 2. Import the dataset to operate on.
 3. Split the dataset.
 4. Predict the required output.
-5. End the program
 
 ## Program:
-```py
+```
 Program to implement the SVM For Spam Mail Detection..
-Developed by: Karthikeyan R
-RegisterNumber: 212222240045
-
-import chardet
-file='/content/spam.csv'
+Developed by : Krthikeyan R
+RegisterNumber : 212222240045
+```
+```
+import chardet 
+file = "C:/Users/SEC/Desktop/spam.csv"
 with open(file,'rb') as rawdata:
-  result = chardet.detect(rawdata.read(100000))
+    result = chardet.detect(rawdata.read(100000))
 result
 
-
 import pandas as pd
-data=pd.read_csv('/content/spam.csv',encoding='Windows-1252')
+data=pd.read_csv('C:/Users/SEC/Desktop/spam.csv',encoding='Windows-1252')
 
 data.head()
 
@@ -57,20 +56,30 @@ y_pred
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
+
 ```
 
 ## Output:
-![ml 9](https://github.com/karthikeyan-R16/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119421232/1a3fc1e6-5f8e-4063-9d7c-45235dbf202d)
+### data.head()
 
-![ml 9 1](https://github.com/karthikeyan-R16/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119421232/5077077a-de65-4c68-8676-0236ceb287c0)
+![image](https://github.com/Ashwinkumar-03/Implementation-of-SVM-For-Spam-Mail-Detection/assets/118663725/4a99c4df-975b-4ba3-a285-b783370f8ae8)
 
-![ml9 2](https://github.com/karthikeyan-R16/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119421232/2aa26181-3686-41fd-aee6-0489611fad51)
+## data.info()
 
-![ml9 3](https://github.com/karthikeyan-R16/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119421232/579b17c9-c820-4d1c-9b79-0dbf614b7416)
+![image](https://github.com/Ashwinkumar-03/Implementation-of-SVM-For-Spam-Mail-Detection/assets/118663725/7def7557-2f37-48e5-8c50-019a6755bb72)
 
-![ml9 4](https://github.com/karthikeyan-R16/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119421232/8b3b6e11-86d6-4901-af62-38c7d94ab58f)
+## data.isnull().sum()
 
-![ml9 5](https://github.com/karthikeyan-R16/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119421232/d1edce1f-69ca-4a06-a270-f4633ac746ae)
+![image](https://github.com/Ashwinkumar-03/Implementation-of-SVM-For-Spam-Mail-Detection/assets/118663725/83dad644-194c-4338-b72b-eaf91afd57a1)
+
+## Y_prediction value
+
+![image](https://github.com/bharathganeshsivasankaran/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119478098/ce982419-af68-49ac-bdfe-44bcc47d26c3)
+
+## Accuracy value
+
+![image](https://github.com/bharathganeshsivasankaran/Implementation-of-SVM-For-Spam-Mail-Detection/assets/119478098/df4c4158-555f-4cfb-b0e1-a5dfc16d9727)
+
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
